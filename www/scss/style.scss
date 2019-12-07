@@ -25,15 +25,9 @@ body {
         }
     }
     .settings-menu {
-        position: absolute;
-        z-index: 3;
-        margin-top: -15vh;
-        background-color: $w;
-        width: 85%;
-        height: 75vh;
+        @extend %options;
         left: -100%;
         transition: left 0.65s ease;
-        box-shadow: 2px 0px 10px 0px rgba(0,0,0,0.75);
         .settings-options {
             padding: 20px;
             .fas {
@@ -43,5 +37,18 @@ body {
     }
     .opened-settings {
         left: 0%;
+    }
+    .options-menu {
+        @extend %options;
+        right: -100%;
+        margin-left: 15%;
+        text-align: right;
+        transition: right 0.65s ease;
+        .options-options {
+            padding: 20px;
+        }
+    }
+    .opened-options {
+        right: 0%;
     }
 }
