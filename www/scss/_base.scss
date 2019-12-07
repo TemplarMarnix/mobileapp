@@ -19,3 +19,9 @@ $w: #ffffff;
 %uc {
     text-transform: uppercase;
 }
+%h1 {
+    font-size: 30px;
+    @extend %ftitle;
+    margin: 15px;
+    padding: 0;
+}
