@@ -1,0 +1,21 @@
+$b: #000000;
+$w: #ffffff;
+
+/* fonts */
+%fnormal {
+    font-family: 'Muli', sans-serif;
+}
+%ftitle {
+    font-family: 'Bebas Neue', cursive;
+}
+%fwelcome {
+    font-family: 'Courgette', cursive;
+}
+/* random globals */
+%space {
+    margin: 0;
+    padding: 0;
+}
+%uc {
+    text-transform: uppercase;
+}

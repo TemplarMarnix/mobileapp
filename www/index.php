@@ -1,6 +1,9 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+  <?php
+  require('common/connect.php');
+  ?>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
   <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
@@ -18,7 +21,9 @@
   </script>
   <link rel="manifest" href="/manifest.json">
   <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Courgette|Muli&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/37e2a8fe9a.js" crossorigin="anonymous"></script>
 
   <script>
     ons.ready(function() {
@@ -32,23 +37,14 @@
   </script>
 </head>
 <body>
-  <label class="switch">
-    <input type="checkbox" class="switch__input">
-    <div class="switch__toggle">
-      <div class="switch__handle"></div>
+  <nav>
+    <div class="settings">
+      <i class="fas fa-cog"></i>
     </div>
-  </label>
-  <label class="switch">
-    <input type="checkbox" class="switch__input" checked>
-    <div class="switch__toggle">
-      <div class="switch__handle"></div>
+    <h1>INITIATIVE</h1>
+    <div class="hamburger-menu">
+      <i class="fas fa-bars"></i>
     </div>
-  </label>
-  <label class="switch">
-    <input type="checkbox" class="switch__input" disabled>
-    <div class="switch__toggle">
-      <div class="switch__handle"></div>
-    </div>
-  </label>
+  </nav>
 </body>
 </html>

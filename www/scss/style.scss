@@ -1,0 +1,22 @@
+@import 'base';
+
+body {
+    @extend %space;
+    nav {
+        width: 100%;
+        text-align: center;
+        background-color: $b;
+        color: $w;
+        padding: 10px;
+        .settings {
+            float: left;
+        }
+        h1 {
+            font-size: 3em;
+            @extend %ftitle;
+        }
+        .hamburger-menu {
+            float: right;
+        }
+    }
+}
