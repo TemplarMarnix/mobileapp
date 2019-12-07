@@ -3,7 +3,7 @@
     "short_name": "INITATIVE™",
     "start_url": "/",
     "display": "standalone",
-    "theme_color": "#ef4e2a",
+    "theme_color": "#000000",
     "background_color": "#fff",
     "icons": [{
       "src": "media/192applogo.png",
