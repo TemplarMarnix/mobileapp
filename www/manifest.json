@@ -1,6 +1,6 @@
 {
-    "name": "GLU-MAD-PWA-sensor-onsen",
-    "short_name": "INITATIVE™",
+    "name": "Client App",
+    "short_name": "My INITIATIVE",
     "start_url": "/",
     "display": "standalone",
     "theme_color": "#000000",
