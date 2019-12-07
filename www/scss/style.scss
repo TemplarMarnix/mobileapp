@@ -7,16 +7,17 @@ body {
         text-align: center;
         background-color: $b;
         color: $w;
-        padding: 10px;
-        .settings {
-            float: left;
-        }
+        font-size: 30px;
+        display: flex;
+        justify-content: space-between;
         h1 {
-            font-size: 3em;
+            font-size: 30px;
             @extend %ftitle;
+            margin: 15px;
+            padding: 0;
         }
-        .hamburger-menu {
-            float: right;
+        .fas {
+            margin: 15px;
         }
     }
 }
