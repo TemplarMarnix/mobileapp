@@ -1,15 +1,22 @@
 $(document).ready(function(){
-    $(".settings-closed").click(function(){
-        $(".settings-menu").addClass("opened-settings");
+    $(".fa-cog").click(function(){
+        if($(".settings-menu").hasClass("opened-settings")) {
+            $(".settings-menu").removeClass("opened-settings");
+        } else {
+            $(".settings-menu").addClass("opened-settings");
+        }
+        if($(".options-menu").hasClass("opened-options")) {
+            $(".options-menu").removeClass("opened-options");
+        }
     });
-    $(".settings-open").click(function(){
-        $(".settings-menu").removeClass("opened-settings");
-    });
-
-    $(".options-closed").click(function(){
-        $(".options-menu").addClass("opened-options");
-    });
-    $(".options-open").click(function(){
-        $(".options-menu").removeClass("opened-options");
+    $(".fa-bars").click(function(){
+        if($(".options-menu").hasClass("opened-options")) {
+            $(".options-menu").removeClass("opened-options");
+        } else {
+            $(".options-menu").addClass("opened-options");
+        }
+        if($(".settings-menu").hasClass("opened-settings")) {
+            $(".settings-menu").removeClass("opened-settings");
+        }
     });
 });

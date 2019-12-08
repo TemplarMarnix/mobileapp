@@ -9,11 +9,9 @@ body {
         position: relative;
         z-index: 1;
         width: 100%;
-        height: 15vh;
         text-align: center;
         background-color: $b;
         color: $w;
-        font-size: 30px;
         display: flex;
         justify-content: space-between;
         .fas {
@@ -23,10 +21,16 @@ body {
             position: relative;
             z-index: 2;
         }
+        button {
+            border: none;
+            background: transparent;
+            color: $w;
+            font-size: 30px;
+        }
     }
     .settings-menu {
         @extend %options;
-        left: -100%;
+        left: -105%;
         transition: left 0.65s ease;
         .settings-options {
             padding: 20px;
@@ -40,7 +44,7 @@ body {
     }
     .options-menu {
         @extend %options;
-        right: -100%;
+        right: -105%;
         margin-left: 15%;
         text-align: right;
         transition: right 0.65s ease;
